@@ -1,8 +1,8 @@
 FROM ubuntu:14.04
-MAINTAINER maintain@geneegroup.com
+MAINTAINER anthony@contentful.com
 
 # Install Basic Packages
-RUN apt-get update && apt-get install -y language-pack-en language-pack-zh-hans bash-completion
+RUN apt-get update && apt-get install -y language-pack-en language-pack-zh-hans bash-completion build-essential sqlite3
 
 # Install Supervisor
 RUN apt-get install -y supervisor && \
